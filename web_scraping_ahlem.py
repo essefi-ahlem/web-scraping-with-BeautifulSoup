@@ -95,15 +95,11 @@ par_text
 # Import pandas to create our dataframe 
 import pandas as pd
 
-par_text[0]
 
 df=pd.DataFrame(list(zip(links,par_title,par_text,types)),columns=['links','title','texte','types'])
 
-df
 
 # Create and download the csv file
 df.to_csv('Desktop',encoding='utf-8-sig')
 
-import pandas as pd
-df=pd.read_csv('/content/Desktop')
 
